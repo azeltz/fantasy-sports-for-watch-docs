@@ -1,63 +1,81 @@
-# Fantasy Sports for Watch Privacy Policy
+# Fantasy Sports for Watch
 
-Last updated: March 27, 2026
+Your fantasy leagues, right on your wrist.
 
-Overview
+Fantasy Sports for Watch brings your ESPN and Sleeper fantasy sports leagues to Apple Watch. View live matchup scores, rosters, standings, and player breakdowns for football, basketball, baseball, and hockey — without pulling out your phone.
 
-Fantasy Sports for Watch ("the App") is a companion app for Apple Watch and iPhone that displays your fantasy sports league data from ESPN and Sleeper. This privacy policy explains what data we collect, how it is stored, and how it is used.
+---
 
-Data We Collect
+## Features
 
-The App collects the following information, provided directly by you:
+- **Live scores** on watch complications, Dynamic Island, and Lock Screen
+- **Full matchup details** with player-by-player point breakdowns
+- **Multi-league support** across ESPN and Sleeper
+- **Standings and all matchups** for your entire league
+- **Daily breakdowns** for multi-day sports (basketball, baseball, hockey)
+- **Low Data Mode** and **Offload Processing** to save Watch battery
 
-• ESPN Authentication Tokens: Your SWID and espn_s2 cookie values, used to authenticate with the ESPN Fantasy API on your behalf.
-• Sleeper Username: Used to look up your Sleeper user ID and retrieve your league data from the Sleeper API.
-• League IDs: Identifiers for the fantasy leagues you choose to track.
-• App Preferences: Settings such as your selected season, display name, and low data mode preference.
+---
 
-The App does not collect analytics, usage data, device identifiers, or any data beyond what you explicitly provide.
+## FAQ
 
-How Your Data Is Stored
+**How do I set up the app?**
+Open the iPhone app, sign in to ESPN or enter your Sleeper username, and add your leagues. Your configuration syncs to Apple Watch automatically.
 
-All data is stored locally on your device:
+**Do I need an ESPN account?**
+Only if you want to track ESPN leagues. You can use Sleeper leagues without an ESPN account, and vice versa.
 
-• ESPN authentication tokens (SWID and espn_s2) are stored in the iOS/watchOS Keychain, which is encrypted by the operating system.
-• League IDs, Sleeper usernames, and app preferences are stored in UserDefaults and App Group shared containers (for communication between the iPhone app, Watch app, widgets, and complications).
+**How do I sign in to ESPN?**
+Tap "Sign in with ESPN" in the iPhone app. You'll log in through ESPN's website directly within the app. After signing in, your leagues are discovered automatically.
 
-We do not maintain any servers or databases that store your personal data.
+**What is the "Manual cookie entry" option?**
+If the ESPN login flow doesn't work for you, you can manually enter your ESPN SWID and espn_s2 cookies. These can be found in your browser's developer tools after logging in to espn.com.
 
-Third-Party Services
+**Does Sleeper require a password?**
+No. Sleeper leagues are public — you only need to enter your Sleeper username. No password or authentication is required.
 
-The App communicates with the following third-party services to retrieve your fantasy league data:
+**How do I add a watch complication?**
+Long-press your watch face, tap "Edit", and add a "Fantasy Score" complication. You can choose rectangular, inline, circular, or corner styles.
 
-• ESPN Fantasy API (lm​-api​-reads​.fantasy​.espn​.com, fan​.api​.espn​.com): Your ESPN authentication tokens are sent directly to ESPN's servers to fetch your league, roster, and matchup data. ESPN's own privacy policy governs their handling of this data.
-• Sleeper API (api​.sleeper​.app): Your Sleeper username and league IDs are sent to Sleeper's public API to fetch league data. No authentication tokens are required. Sleeper's own privacy policy governs their handling of this data.
-• Cloudflare Workers (fantasy​-watch​-backend​.amiracle​.workers​.dev): A serverless proxy that relays API requests to ESPN and Sleeper on behalf of the App. This worker processes requests in real time and does not persist, log, or store any user data, credentials, or API responses. It acts solely as a stateless relay.
+**How do I use Live Activities?**
+In the iPhone app, tap the bolt icon next to any league to start a Live Activity. Your matchup score will appear on the Dynamic Island and Lock Screen.
 
-Data Sharing
+**How often do scores update?**
+The Watch app auto-refreshes every 60 seconds when viewing a league. Complications refresh approximately every 15 minutes (controlled by watchOS). Live Activities update periodically in the background.
 
-We do not sell, rent, trade, or share your personal data with any third parties. Your data is only transmitted to ESPN and Sleeper for the sole purpose of retrieving your fantasy league information.
+**What is Low Data Mode?**
+A setting on the Watch app that reduces API calls and disables auto-refresh. Useful for saving battery during long days when you don't need constant updates.
 
-Data Retention and Deletion
+**What is Offload Processing?**
+A setting that routes Watch requests through a lightweight server, so your Watch makes one network call instead of several. This reduces battery usage and speeds up loading. The server is a stateless relay and does not store any of your data.
 
-Since all data is stored locally on your device, uninstalling the App removes all stored data, including your ESPN tokens, Sleeper username, league IDs, and preferences.
+**What sports are supported?**
+Football (NFL), basketball (NBA), baseball (MLB), and hockey (NHL) — on both ESPN and Sleeper.
 
-You can also clear your ESPN credentials or Sleeper username from within the App's settings at any time without uninstalling.
+**How do I remove a league?**
+In the iPhone app, swipe left on any league in the Leagues list to delete it.
 
-Children's Privacy
+**How do I delete all my data?**
+Uninstalling the app removes all stored data from your iPhone and Watch, including credentials, league IDs, and preferences. You can also sign out of ESPN or disconnect Sleeper from within the app at any time.
 
-The App is not directed at children under the age of 13 and does not knowingly collect personal information from children.
+**The app says "Add leagues on iPhone and sync." What do I do?**
+Open the iPhone companion app, sign in to ESPN or Sleeper, add your leagues, and they will sync to your Watch automatically.
 
-Changes to This Policy
+**My ESPN session expired. What do I do?**
+ESPN cookies expire periodically. Open the iPhone app, sign out, and sign back in to refresh your session.
 
-We may update this privacy policy from time to time. Any changes will be reflected by updating the "Last updated" date at the top of this page.
+---
 
-Contact
+## Privacy
 
-If you have any questions or concerns about this privacy policy, please contact us at:
+Your privacy matters. All data is stored locally on your device. We don't collect analytics, track usage, or sell your data.
 
-[azeltzdev@gmail.com]
+Read our full [Privacy Policy](https://azeltz.github.io/fantasy-sports-for-watch-docs/privacy-policy).
 
-# About Fantasy Sports for Watch
+---
 
-Fantasy Sports for Watch brings your ESPN and Sleeper fantasy leagues to your wrist. View live matchup scores, rosters, standings, and player stats — all from Apple Watch. Supports football, basketball, baseball, and hockey.
+## Contact
+
+For questions, bug reports, or feedback:
+
+**Email:** [azeltzdev@gmail.com](mailto:azeltzdev@gmail.com)
