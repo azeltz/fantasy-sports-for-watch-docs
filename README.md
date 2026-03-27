@@ -57,3 +57,7 @@ Contact
 If you have any questions or concerns about this privacy policy, please contact us at:
 
 [azeltzdev@gmail.com]
+
+# About Fantasy Sports for Watch
+
+Fantasy Sports for Watch brings your ESPN and Sleeper fantasy leagues to your wrist. View live matchup scores, rosters, standings, and player stats — all from Apple Watch. Supports football, basketball, baseball, and hockey.
