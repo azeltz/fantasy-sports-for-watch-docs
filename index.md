@@ -9,6 +9,7 @@ Fantasy Sports for Watch brings your ESPN and Sleeper fantasy sports leagues to 
 ## Features
 
 - **Live scores** on watch complications, Dynamic Island, and Lock Screen
+- **Live Activities** that list who's playing for each team — position, name, points, and what they just scored — updated about every minute
 - **Full matchup details** with player-by-player point breakdowns
 - **Multi-league support** across ESPN and Sleeper
 - **Standings and all matchups** for your entire league
@@ -38,19 +39,22 @@ No. Sleeper leagues are public — you only need to enter your Sleeper username.
 Long-press your watch face, tap "Edit", and add a "Fantasy Score" complication. You can choose rectangular, inline, circular, or corner styles.
 
 **How do I use Live Activities?**
-In the iPhone app, tap the bolt icon next to any league to start a Live Activity. Your matchup score will appear on the Dynamic Island and Lock Screen.
+In the iPhone app, tap the bolt icon next to any league to start a Live Activity. Your matchup score will appear on the Dynamic Island and Lock Screen, with the players currently in games listed under each team. Choose how many (up to 6 per team, or Off) under **Players Shown** in the iPhone app's Live Activities settings.
 
 **How often do scores update?**
-The Watch app auto-refreshes every 60 seconds when viewing a league. Complications refresh approximately every 15 minutes (controlled by watchOS). Live Activities update periodically in the background.
+The Watch app auto-refreshes every 60 seconds when viewing a league. Complications refresh approximately every 15 minutes (controlled by watchOS). Live Activities update about every minute during games. The time at the bottom of each Live Activity shows when it last updated, and turns orange if updates have stalled — tap it to refresh right away.
+
+**What does "lineup unconfirmed" mean?**
+Live Activity scores are calculated from your lineups as the app last read them. If a game starts before the app has checked your lineup again, a late swap may not be reflected yet. Tap the line to refresh.
 
 **What is Low Data Mode?**
 A setting on the Watch app that reduces API calls and disables auto-refresh. Useful for saving battery during long days when you don't need constant updates.
 
 **What is Offload Processing?**
-A setting that routes Watch requests through a lightweight server, so your Watch makes one network call instead of several. This reduces battery usage and speeds up loading. The server is a stateless relay and does not store any of your data.
+A setting that routes Watch requests through a lightweight server, so your Watch makes one network call instead of several. This reduces battery usage and speeds up loading. Your ESPN login passes through the server on its way to ESPN and is never stored.
 
 **What sports are supported?**
-Football (NFL), basketball (NBA), baseball (MLB), and hockey (NHL) — on both ESPN and Sleeper.
+Football (NFL), basketball (NBA), baseball (MLB), and hockey (NHL) on ESPN; football and basketball on Sleeper (Sleeper doesn't offer baseball or hockey leagues).
 
 **How do I remove a league?**
 In the iPhone app, swipe left on any league in the Leagues list to delete it.
@@ -68,7 +72,7 @@ ESPN cookies expire periodically. Open the iPhone app, sign out, and sign back i
 
 ## Privacy
 
-Your privacy matters. All data is stored locally on your device. We don't collect analytics, track usage, or sell your data.
+Your privacy matters. Your ESPN login stays on your device and is never stored on our server. To keep Live Activities current, the server keeps short-lived information about the matchups you're following, such as lineups and scores, and nothing that identifies you. We don't collect analytics, track usage, or sell your data.
 
 Read our full [Privacy Policy](https://azeltz.github.io/fantasy-sports-for-watch-docs/privacy-policy).
 
